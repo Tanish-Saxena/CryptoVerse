@@ -1,0 +1,72 @@
+/* Exchange.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .subscription-form {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  .subscription-form h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .subscription-form p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .subscription-form button {
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for subscription success message */
+  .subscription-success {
+    color: #4caf50;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Additional styles for premium content */
+  .premium-content-info {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  /* Style for link buttons */
+  .link-button {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .link-button:hover {
+    text-decoration: underline;
+  }
+  

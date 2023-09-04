@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Link, Routes } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
+import Zoom from "react-reveal/Zoom";
 
 import {
   Navbar,
@@ -11,13 +12,15 @@ import {
   CryptoDetails,
 } from "./components";
 import "./App.css";
-
+import Fade from "react-reveal";
 const App = () => {
   return (
     <div className="app">
-      <div className="navbar">
-        <Navbar />
-      </div>
+      <Fade left>
+        <div className="navbar">
+          <Navbar />
+        </div>
+      </Fade>
       <div className="main">
         <Layout>
           <div className="routes">
@@ -34,20 +37,22 @@ const App = () => {
             </Routes>
           </div>
         </Layout>
-        <div className="footer">
-          <Typography.Title
-            level={5}
-            style={{ color: "white", textAlign: "center" }}
-          >
-            CryptoVerse <br />
-            All Rights Reserved
-          </Typography.Title>
-          <Space>
-            <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
-            <Link to="/news">News</Link>
-          </Space>
-        </div>
+        <Zoom top>
+          <div className="footer">
+            <Typography.Title
+              level={5}
+              style={{ color: "white", textAlign: "center" }}
+            >
+              CryptoVerse <br />
+              All Rights Reserved
+            </Typography.Title>
+            <Space>
+              <Link to="/">Home</Link>
+              <Link to="/exchanges">Exchanges</Link>
+              <Link to="/news">News</Link>
+            </Space>
+          </div>
+        </Zoom>
       </div>
     </div>
   );
